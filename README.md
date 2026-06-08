@@ -13,7 +13,9 @@ A simple Arduino project that demonstrates interfacing two analog joystick modul
 
 <img width="795" height="516" alt="image" src="https://github.com/user-attachments/assets/c7899706-10c0-437c-84aa-eb8fa5e6634a" />
 
+<img width="1012" height="837" alt="image" src="https://github.com/user-attachments/assets/62a5a857-d171-49a3-87f7-b78114c6c49c" />
 
+<img width="651" height="772" alt="Screenshot 2026-06-09 013550" src="https://github.com/user-attachments/assets/56db44a3-b290-4dba-b0a5-b163a0aeef88" />
 
 🚀 Features
 Reads input from two joystick modules
