@@ -46,7 +46,8 @@ VRY	A3
 SW	D3
 
 Adjust the pin numbers if your code uses different connections.
-
+Software requirement for the working is the vjoy serial feeder.
+download and setup accordingly
 📊 How It Works
 
 Each joystick contains:
