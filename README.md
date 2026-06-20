@@ -1,8 +1,78 @@
-# Dual-Joystick-Arduino
+# 🎮 Arduino Dual Joystick PC Controller
 
-🎮 Dual Joystick Interface with Arduino Uno
+A simple Arduino Uno project that converts two analog joystick modules into a PC-compatible game controller using the IBUS protocol and vJoySerialFeeder.
 
-A simple Arduino project that demonstrates interfacing two analog joystick modules with an Arduino Uno. This setup can be used as the foundation for robotics control, RC vehicles, game controllers, IoT interfaces, and custom human-machine interaction projects.
+## Overview
+
+This project uses two joystick modules connected to an Arduino Uno to generate six virtual control channels. The Arduino reads joystick movements, converts them into IBUS-compatible signals, and sends them over Serial to a computer. vJoySerialFeeder receives these signals and maps them to a virtual joystick, allowing the controller to be used in games and simulators.
+
+## Features
+
+* Dual analog joystick input
+* Six-channel IBUS data generation
+* Real-time serial communication
+* Compatible with vJoySerialFeeder
+* Smooth control with high refresh rate
+* No additional microcontrollers required
+
+## Components Used
+
+* Arduino Uno
+* 2 × Analog Joystick Modules
+* Jumper Wires
+* USB Cable
+* PC with vJoy and vJoySerialFeeder installed
+
+## System Working
+
+Joystick Modules  
+⬇️  
+Arduino Uno  
+⬇️  
+IBUS Packet Generation  
+⬇️  
+USB Serial Communication  
+⬇️  
+vJoySerialFeeder  
+⬇️  
+Windows Virtual Joystick  
+⬇️  
+Game / Flight Simulator
+
+
+## Channel Mapping
+
+| Control  | Arduino Pin |
+| -------- | ----------- |
+| Roll     | A5          |
+| Pitch    | A4          |
+| Throttle | A2          |
+| Yaw      | A3          |
+| Aux 1    | Fixed       |
+| Aux 2    | Fixed       |
+
+## Applications
+
+* Flight Simulators
+* Drone Simulators
+* RC Training
+* Robotics Control
+* Custom Gaming Controllers
+
+## Software Used
+
+* Arduino IDE
+* vJoy Driver
+* vJoySerialFeeder
+
+## Future Improvements
+
+* Push-button support
+* Additional switches and AUX channels
+* ESP32 wireless implementation
+* Custom controller enclosure
+
+
 
 📸 Project Preview
 
@@ -17,73 +87,3 @@ A simple Arduino project that demonstrates interfacing two analog joystick modul
 
 <img width="651" height="772" alt="Screenshot 2026-06-09 013550" src="https://github.com/user-attachments/assets/56db44a3-b290-4dba-b0a5-b163a0aeef88" />
 
-🚀 Features
-Reads input from two joystick modules
-Supports X and Y axis analog movement
-Detects joystick button presses
-Real-time serial monitoring
-Expandable for robotics and wireless control projects
-Beginner-friendly hardware setup
-🛠 Components Used
-Component	Quantity
-Arduino Uno	1
-Joystick Module	2
-Jumper Wires	Several
-USB Cable	1
-Computer with Arduino IDE	1
-🔌 Wiring Overview
-Joystick 1
-Joystick Pin	Arduino Pin
-VCC	5V
-GND	GND
-VRX	A0
-VRY	A1
-SW	D2
-Joystick 2
-Joystick Pin	Arduino Pin
-VCC	5V
-GND	GND
-VRX	A2
-VRY	A3
-SW	D3
-
-Adjust the pin numbers if your code uses different connections.
-Software requirement for the working is the vjoy serial feeder.
-download and setup accordingly
-📊 How It Works
-
-Each joystick contains:
-
-Two potentiometers for X and Y movement
-One push-button switch
-
-The Arduino continuously reads the analog values from both joysticks and processes them through the ADC (Analog-to-Digital Converter). These values can then be used for:
-
-Robot navigation
-Drone controls
-Menu navigation
-Servo control
-Custom gaming controllers
-💻 Example Output
-Joystick 1 -> X: 512 Y: 520
-Joystick 2 -> X: 498 Y: 510
-
-Button 1: Released
-Button 2: Pressed
-🎯 Future Improvements
-Control a robotic car
-Wireless communication using HC-05 Bluetooth
-ESP32 integration
-OLED display feedback
-Servo motor control
-PC game controller emulation
-IoT dashboard integration
-📚 What I Learned
-Analog signal reading using Arduino
-Joystick interfacing
-Serial communication
-Hardware debugging
-Basic embedded systems development
-🤝 Contributing
-
-Feel free to fork the repository, experiment with the project, and submit improvements.
