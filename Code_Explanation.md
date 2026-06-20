@@ -141,24 +141,26 @@ This high refresh rate provides smooth and responsive control for gaming and sim
 
 ## Overall working
 
-🎮 Dual Joystick Modules
-        ⬇️
-📟 Arduino Reads Analog Values
-        ⬇️
-🔄 Maps Values to IBUS Channels
-        ⬇️
-📦 Generates IBUS Packet
-        ⬇️
-✅ Adds Checksum for Error Detection
-        ⬇️
-🔌 Sends Data via USB Serial
-        ⬇️
-💻 vJoySerialFeeder Receives Data
-        ⬇️
-🕹️ Creates Virtual Joystick
-        ⬇️
-🪟 Windows Detects Controller
-        ⬇️
-🎯 Game / Flight Simulator Input
+## System Workflow
+
+- 🎮 Dual Joystick Modules
+  - ⬇️
+- 📟 Arduino Reads Analog Values
+  - ⬇️
+- 🔄 Maps Values to IBUS Channels
+  - ⬇️
+- 📦 Generates IBUS Packet
+  - ⬇️
+- ✅ Adds Checksum for Error Detection
+  - ⬇️
+- 🔌 Sends Data via USB Serial
+  - ⬇️
+- 💻 vJoySerialFeeder Receives Data
+  - ⬇️
+- 🕹️ Creates Virtual Joystick
+  - ⬇️
+- 🪟 Windows Detects Controller
+  - ⬇️
+- 🎯 Game / Flight Simulator Input
 
 The final system successfully converts physical joystick movements into virtual controller inputs, enabling the Arduino-based controller to function as a standard game controller for PC applications and simulators.
