@@ -139,26 +139,20 @@ A delay of 4 milliseconds results in an update frequency of approximately 250 Hz
 
 This high refresh rate provides smooth and responsive control for gaming and simulation applications.
 
-## Overall System Workflow
+## Overall working
 
-Joystick Movement
-↓
-Arduino Reads Analog Values
-↓
-Values Mapped to IBUS Channel Range (1000–2000)
-↓
-IBUS Packet Generated
-↓
-Checksum Added
-↓
-USB Serial Transmission
-↓
-vJoySerialFeeder
-↓
-Virtual Joystick Created
-↓
-Windows Detects Controller
-↓
-Game / Simulator Input
+Joystick Modules  
+⬇️  
+Arduino Uno  
+⬇️  
+IBUS Packet Generation  
+⬇️  
+USB Serial Communication  
+⬇️  
+vJoySerialFeeder  
+⬇️  
+Windows Virtual Joystick  
+⬇️  
+Game / Flight Simulator
 
 The final system successfully converts physical joystick movements into virtual controller inputs, enabling the Arduino-based controller to function as a standard game controller for PC applications and simulators.
