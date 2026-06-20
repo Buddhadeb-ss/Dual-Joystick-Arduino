@@ -1,6 +1,7 @@
 # 🎮 Arduino Dual Joystick PC Controller
 
 A simple Arduino Uno project that converts two analog joystick modules into a PC-compatible game controller using the IBUS protocol and vJoySerialFeeder.
+The code is written in C++ using the Arduino framework.
 
 ## Overview
 
